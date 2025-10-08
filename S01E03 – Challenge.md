@@ -1,8 +1,3 @@
-Bien sûr \! Pour afficher ce texte de manière structurée et lisible sur GitHub, vous devez utiliser le format **Markdown (.md)**.
-
-Voici le code exact que vous pouvez copier et coller dans un fichier nommé, par exemple, `S01E03_COMPOSANTS.md` :
-
-```markdown
 # S01E03 – Challenge : Identification du Matériel 🔎
 
 Ce challenge a pour but d'identifier et de documenter avec précision les **connecteurs** et les **composants internes** de la machine.
@@ -59,4 +54,3 @@ Prenez en photo les différents connecteurs présents sur votre ordinateur et ch
 | **8** | Port USB 2.0 | (Standard intermédiaire) |
 | **9** | Port RJ45 | (Réseau Ethernet) |
 | **10** | Ports Audio | (Micro, enceinte, optique) |
-```
