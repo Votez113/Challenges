@@ -55,3 +55,14 @@ Prenez en photo les différents connecteurs présents sur votre ordinateur et ch
 | **9** | Port RJ45 | (Réseau Ethernet) |
 | **10** | Ports Audio | (Micro, enceinte, optique) |
 
+---
+
+## 🔌 Partie 3 : Assemblage du PC
+
+### Des tutos existent partout sur le web :
+Exemple : https://www.materiel.net/guide-achat/g1-montage-pc/5391/
+
+La patience est maître mot, le seul muscle nécessaire est le cerveau :
+https://www.youtube.com/watch?v=sxbL6hSRf0g
+
+
