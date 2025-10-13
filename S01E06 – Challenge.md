@@ -29,7 +29,7 @@ Avant de la lancer, il faut préparer notre OS en lançant les commandes suivant
 Une fois les commandes terminées, je fais un clic droit dans l'espace vide → Ouvrir dans un terminal.
 J'exécute : sudo ./VBoxLinuxAdditions.run, et l'installation se fait.
 
-![Image ADDin](/Images/E06/ubuntu_addin2.jpg)
+![Image ADDin](/Images/E06/ubuntu_addin3.jpg)
 
 Puis redémarrage de la machine.
 
@@ -43,11 +43,23 @@ Création d'une nouvelle VM Debian
 
 1. Installation en mode graphique
 
-2. Choix des options de partition
+![Installation](/Images/E06/debian_install.jpg)
+
+2. Choix des options de partition (selon les conseils de notre super formateur)
+
+![Partitionnement](/Images/E06/debian_partition1.jpg)
+
+![Partitionnement](/Images/E06/debian_partition2.jpg)
 
 3. Ouverture de session
 
+![Ouverture de session](/Images/E06/session_debian.jpg)
+
 4. Installation des logiciels en lignes de commande
 
-(image.png)
+![Installation Libre Office](/Images/E06/ubuntu_libreoffice.jpg)
+
+![Installation VLC](/Images/E06/ubuntu_vlc.jpg)
+
+![Installation Adobe Reader](/Images/E06/ubuntu_reader.jpg)
 
