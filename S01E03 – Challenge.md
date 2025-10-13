@@ -10,7 +10,7 @@ Ce challenge a pour but d'identifier et de documenter avec précision les **conn
 
 ### Image de l'ordinateur
 
-![Vue interne du PC, montrant les principaux composants (Carte mère, CPU, RAM, etc.)](image-1.png)
+![Vue interne du PC, montrant les principaux composants (Carte mère, CPU, RAM, etc.)](/Images/CM_devant.jpg)
 
 ### Légende des Composants Internes
 
@@ -38,7 +38,7 @@ Prenez en photo les différents connecteurs présents sur votre ordinateur et ch
 
 ### Image arrière Carte-mère
 
-![Vue arrière de la carte mère, montrant les différents ports d'entrée/sortie (I/O Shield)](image.png)
+![Vue arrière de la carte mère, montrant les différents ports d'entrée/sortie (I/O Shield)](/Images/CM_arriere.png)
 
 ### Légende des Ports de Connexion
 
@@ -54,3 +54,15 @@ Prenez en photo les différents connecteurs présents sur votre ordinateur et ch
 | **8** | Port USB 2.0 | (Standard intermédiaire) |
 | **9** | Port RJ45 | (Réseau Ethernet) |
 | **10** | Ports Audio | (Micro, enceinte, optique) |
+
+---
+
+## 🔌 Partie 3 : Assemblage du PC
+
+### Des tutos existent partout sur le web :
+Exemple : https://www.materiel.net/guide-achat/g1-montage-pc/5391/
+
+La patience est maître mot, le seul muscle nécessaire est le cerveau :
+https://www.youtube.com/watch?v=sxbL6hSRf0g
+
+
