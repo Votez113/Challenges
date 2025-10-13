@@ -8,53 +8,38 @@ Bonus: Installer une 3ème ou 4ème VM avec le système d’exploitation Debian 
 
 ---
 
-## 📸 Partie 1 : Photo des Composants Internes (PC Fixe)
+## 📸 Partie 1 : Installation des Add-ins VirtualBox
 
-**⚠️ Avertissement de Sécurité :** Pour ceux qui ont un PC fixe, veuillez ouvrir la façade de votre ordinateur **hors tension** et **après l’avoir débranché**. Prenez une photo des composants à l’intérieur et essayez d’identifier chaque élément.
+Dans notre VM Ubuntu, je clique sur Périphériques / Insérer l'image des Additions invités
 
-### Image de l'ordinateur
+L'ISO s'ajoute automatiquement dans Ubuntu
 
-![Vue interne du PC, montrant les principaux composants (Carte mère, CPU, RAM, etc.)](image-1.png)
+Avant de la lancer, il faut préparer notre OS en lançant les commandes suivantes :
 
-### Légende des Composants Internes
+sudo apt update
+sudo apt upgrade
+sudo apt install build-essential linux-headers-$(uname -r)
 
-| N° | Composant | Détails / Connectique |
-| :---: | :--- | :--- |
-| **1** | Carte mère | Gigabyte GA-Z270X-Ultra (supporte plusieurs connecteurs) |
-| **2** | Processeur (CPU) | Intel Core i7-7700K (socket z270) |
-| **3** | Refroidissement (Pompe) | Watercooling Thermaltake Water 3.0 (pin alimentation carte mère) |
-| **4** | Refroidissement (Radiateur) | Radiateur Watercooling (pin alimentation carte mère) |
-| **5** | Stockage Principal | SSD Samsung 980 (**NVME M.2**) |
-| **6** | Carte Graphique (GPU) | NVIDIA GeForce GTX 1070 (**PCI Express x16**) |
-| **7** | Carte Fille | Carte fille USB (**PCI**) |
-| **8** | Stockage Secondaire | SSD secondaire (**SATA**) |
-| **9** | Lecteur Optique | Lecteur Blu-ray (**SATA**) |
-| **10** | Refroidissement (Ventilateurs) | Ventilateurs boitiers (pin alimentation carte mère) |
-| **11** | Alimentation PC | Bloc d'alimentation |
-| **12** | Boitier PC | Châssis de l'ordinateur |
-| **13** | Mémoire Vive (RAM) | Barrette de RAM 4x8Go DDR4 Corsair (Port parallèle carte mère) |
+Une fois les commandes terminées, je fais un clic droit dans l'espace vide → Ouvrir dans un terminal.
+J'exécute : sudo ./VBoxLinuxAdditions.run, et l'installation se fait.
+
+Puis redémarrage de la machine.
+
+J'active ensuite les options de copier/coller, puis test, tout fonctionnne
 
 ---
 
-## 🔌 Partie 2 : Identification des Connecteurs Arrières
+## 🔌 Partie 2 : Installation de Debian
 
-Prenez en photo les différents connecteurs présents sur votre ordinateur et cherchez le nom le plus précis possible de chaque port présent sur la machine.
+Création d'une nouvelle VM Debian
 
-### Image arrière Carte-mère
+1. Installation en mode graphique
 
-![Vue arrière de la carte mère, montrant les différents ports d'entrée/sortie (I/O Shield)](image.png)
+2. Choix des options de partition
 
-### Légende des Ports de Connexion
+3. Ouverture de session
 
-| N° | Nom du Connecteur | Détail / Standard |
-| :---: | :--- | :--- |
-| **1** | Ports PS/2 | (pour clavier et souris anciens) |
-| **2** | Port USB | (Génération non spécifiée, probablement USB 3.0/3.2) |
-| **3** | Port DVI | (Affichage numérique/analogique) |
-| **4** | Port USB-C | (Versatile, réversible) |
-| **5** | Port USB 3.1 | (Haute vitesse) |
-| **6** | Port HDMI | (Interface multimédia haute définition) |
-| **7** | Port USB 1.0 | (Standard ancien / Faible vitesse) |
-| **8** | Port USB 2.0 | (Standard intermédiaire) |
-| **9** | Port RJ45 | (Réseau Ethernet) |
-| **10** | Ports Audio | (Micro, enceinte, optique) |
+4. Installation des logiciels en lignes de commande
+
+(image.png)
+
