@@ -14,14 +14,22 @@ Dans notre VM Ubuntu, je clique sur Périphériques / Insérer l'image des Addit
 
 L'ISO s'ajoute automatiquement dans Ubuntu
 
+![Image ADDin](/Images/E06/ubuntu_addin2.jpg)
+
+![Image ADDin](/Images/E06/ubuntu_addin.jpg)
+
 Avant de la lancer, il faut préparer notre OS en lançant les commandes suivantes :
 
-sudo apt update
-sudo apt upgrade
-sudo apt install build-essential linux-headers-$(uname -r)
+```sudo apt update```
+
+```sudo apt upgrade```
+
+```sudo apt install build-essential linux-headers-$(uname -r)```
 
 Une fois les commandes terminées, je fais un clic droit dans l'espace vide → Ouvrir dans un terminal.
 J'exécute : sudo ./VBoxLinuxAdditions.run, et l'installation se fait.
+
+![Image ADDin](/Images/E06/ubuntu_addin2.jpg)
 
 Puis redémarrage de la machine.
 
