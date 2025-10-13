@@ -18,7 +18,7 @@ L'ISO s'ajoute automatiquement dans Ubuntu
 
 ![Image ADDin](/Images/E06/ubuntu_addin.jpg)
 
-Avant de la lancer, il faut préparer notre OS en lançant les commandes suivantes :
+Avant de la lancer, il faut préparer notre OS en lançant les commandes suivantes : 
 
 ```sudo apt update```
 
