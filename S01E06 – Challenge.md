@@ -63,3 +63,4 @@ Création d'une nouvelle VM Debian
 
 ![Installation Adobe Reader](/Images/E06/ubuntu_reader.jpg)
 
+![Installation terminée](/Images/E06/debian_fini.jpg)
