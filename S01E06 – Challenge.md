@@ -35,6 +35,15 @@ Puis redémarrage de la machine.
 
 J'active ensuite les options de copier/coller, puis test, tout fonctionnne
 
+Installation des logiciels en lignes de commande
+
+![Installation Libre Office](/Images/E06/ubuntu_libreoffice.jpg)
+
+![Installation VLC](/Images/E06/ubuntu_vlc.jpg)
+
+![Installation Adobe Reader](/Images/E06/ubuntu_reader.jpg)
+
+![Installation terminée](/Images/E06/debian_fini.jpg)
 ---
 
 ## 🔌 Partie 2 : Installation de Debian
@@ -55,12 +64,3 @@ Création d'une nouvelle VM Debian
 
 ![Ouverture de session](/Images/E06/session_debian.jpg)
 
-4. Installation des logiciels en lignes de commande
-
-![Installation Libre Office](/Images/E06/ubuntu_libreoffice.jpg)
-
-![Installation VLC](/Images/E06/ubuntu_vlc.jpg)
-
-![Installation Adobe Reader](/Images/E06/ubuntu_reader.jpg)
-
-![Installation terminée](/Images/E06/debian_fini.jpg)
