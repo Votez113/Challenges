@@ -10,7 +10,7 @@ Bonus: Installer une 3ème ou 4ème VM avec le système d’exploitation Debian 
 
 ## 📸 Partie 1 : Installation des Add-ins VirtualBox
 
-Dans notre VM Ubuntu, je clique sur Périphériques / Insérer l'image des Additions invités
+Dans notre VM Ubuntu, je clique sur Périphériques / Insérer l'image des Additions invités 
 
 L'ISO s'ajoute automatiquement dans Ubuntu
 
