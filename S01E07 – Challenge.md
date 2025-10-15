@@ -22,15 +22,23 @@ Au moment d'enregistrer ma base de données, j'ai choisi de la placer directemen
 ### 📤 Extraction de mes mots de passe Google
 Je suis allé dans les paramètres de mon compte Google, puis dans la section "Sécurité" pour trouver le "Gestionnaire de mots de passe". Là, j'ai utilisé l'option "Exporter" pour télécharger tous mes mots de passe enregistrés dans un seul fichier au format CSV.
 
+![Export Chrome](/Images/E07/Chrome_export.jpg)
+
 ---
 
 ### 📥 Importation du CSV dans Keepass
 De retour dans KeePass, je suis allé dans le menu "Fichier", puis "Importer". J'ai sélectionné le format "Generic CSV Importer", j'ai choisi le fichier CSV de Google, et j'ai suivi les étapes pour que tous mes anciens mots de passe soient correctement ajoutés à ma nouvelle base de données.
 
+![Import Keepass](/Images/E07/Keepass_import.jpg)
+
+![Import Keepass](/Images/E07/Keepass_import2.jpg)
+
 ---
 
 ### 📂 Réorganisation des mots de passe avec dossier
 Pour y voir plus clair, j'ai créé plusieurs dossiers (ou "groupes") pour classer mes identifiants par catégories : "Réseaux Sociaux" 📱, "Travail" 💼, "Achats en ligne" 🛒, etc. J'ai simplement glissé-déposé chaque entrée dans le dossier correspondant.
+
+![Import Keepass](/Images/E07/Keepass_organisation.jpg)
 
 ---
 
