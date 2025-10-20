@@ -18,7 +18,7 @@ Installez les deux suites bureautiques sur votre machine ou, idéalement, sur un
 Installez la suite **LibreOffice** (Writer, Calc, Impress, etc.) sur la **machine virtuelle** dédiée.
 
 -> L'installation a été effectuée en téléchargeant l'exécutable sur le site officiel
-!(Libre Office)Images\Libre_office.jpg
+![Libre Office](/Images/Libre_office.jpg)
 
 ### 2. Installation de Microsoft Office
 
@@ -38,7 +38,7 @@ Créez un document pour chaque type d'application (document texte, tableur, pré
 * Créez un document texte simple (contenant du texte formaté, une image et une liste à puces) en utilisant **Microsoft Word** et enregistrez-le.
 * Répétez la même opération avec **LibreOffice Writer** et enregistrez-le.
 
-!(creation docs)Images\Creation_docs.jpg
+![creation docs](/Images/Creation_docs.jpg)
 
 
 ### 4. Création d'un Tableur : Excel et Calc
@@ -46,7 +46,7 @@ Créez un document pour chaque type d'application (document texte, tableur, pré
 * Créez un tableur simple (contenant des données, une formule de base comme une somme, et un petit graphique) avec **Microsoft Excel** et enregistrez-le.
 * Répétez la même opération avec **LibreOffice Calc** et enregistrez-le.
 
-!(creation tableur)Images\Creation_tableur.jpg
+![creation tableur](/Images/Creation_tableur.jpg)
 
 
 ***
@@ -63,7 +63,7 @@ Testez la compatibilité des fichiers :
 
 **Notez les éventuels problèmes** de mise en page, de polices, de graphiques ou de formules.
 
-!(Ouverture)Images\Ouverture_inverse.jpg
+![Ouverture](/Images/Ouverture_inverse.jpg)
 
 ***
 
@@ -73,8 +73,25 @@ Explorez les fonctionnalités de travail collaboratif en ligne offertes par chaq
 
 ### 7. Options de Collaboration : Office 365 et Collabora
 
-* **Microsoft Office 365 :** Explorez comment partager un document Word ou Excel et collaborer en temps réel avec un autre utilisateur.
-* **LibreOffice (via Collabora) :** Recherchez comment mettre en place ou utiliser les outils de collaboration basés sur **Collabora Online** pour les documents LibreOffice.
+C'est une excellente question pour comprendre les enjeux du choix d'une suite bureautique !
+
+Voici une courte comparaison des aspects clés entre **Microsoft 365** et **Collabora Online** :
+
+| Caractéristique | Microsoft 365 (Office 365) | Collabora Online |
+| :--- | :--- | :--- |
+| **Modèle** | Solution propriétaire, sous abonnement (SaaS). | Basé sur LibreOffice, **Open Source**. |
+| **Hébergement & Souveraineté** | Cloud public Microsoft (serveurs souvent aux USA/Europe). Peu de contrôle sur les données. | Peut être **auto-hébergé** (sur vos propres serveurs) ou via un partenaire. Permet une **souveraineté et un contrôle total** des données. |
+| **Fonctionnalités** | **Très riche** (Word, Excel, PowerPoint complets). Intégration profonde avec la suite (Teams, Outlook, OneDrive). Fonctionnalités avancées (IA, macros VBA). | **Fonctionnalités bureautiques de base et collaboration très solides.** Moins de fonctionnalités avancées que la version complète de MS Office (ex: pas de macros VBA). |
+| **Compatibilité** | **Excellente** avec ses propres formats (`.docx`, `.xlsx`, `.pptx`). Supporte aussi l'ODF (Open Document Format). | **Très bonne** prise en charge des formats Microsoft (cœur du projet LibreOffice), mais peut rencontrer des défis sur des mises en page très complexes ou des macros avancées. |
+| **Collaboration** | **Excellente coédition** en temps réel, mature et parfaitement intégrée aux autres outils (Teams, SharePoint). | **Bonne coédition** en temps réel, disponible et efficace. Dépend souvent de l'intégration avec une plateforme tierce (Nextcloud, ownCloud, etc.). |
+| **Écosystème** | **Vaste.** Intégration native avec des dizaines d'applications et services professionnels (messagerie, visioconférence, CRM). | Se concentre sur la bureautique. S'intègre via des connecteurs à des solutions Open Source ou propriétaires (Nextcloud, Moodle, etc.). |
+
+***
+
+### En résumé :
+
+* **Microsoft 365** est la référence du marché, offrant un écosystème complet, une intégration parfaite et les applications les plus riches en fonctionnalités, moyennant un abonnement et l'hébergement de vos données chez Microsoft.
+* **Collabora Online** est l'alternative pour ceux qui privilégient le **contrôle total** de leurs données (souveraineté numérique) et les solutions **Open Source**, tout en offrant une suite bureautique collaborative efficace basée sur LibreOffice.
 
 ### 8. Exploration du Site Clic-Formation
 
