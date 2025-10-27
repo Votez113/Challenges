@@ -8,7 +8,7 @@ convertir sa table de partitions de MBR à GPT (ou l’inverse) à l’aide de l
 créer plusieurs partitions sur cette clé et tester de les formater avec différents systèmes de fichiers : NTFS, FAT32 et ExFAT
 testez la compatibilité avec les différents systèmes d’exploitation (en connectant la clé USB sur des VMs VirtualBox)
 
-1. Utilisation d'une clé USB de 64 Go
+## 1. Utilisation d'une clé USB de 64 Go
 
 Pour ce premier test j'utilise une clé d'une capacité totale de 64 Go
 
@@ -26,7 +26,7 @@ Je formate la clé en NTFS via l'interface graphique :
 
 ![Clé 64Go](Images/E06/E06_FormatNTFS4.jpg)
 
-2. Conversion d'un volume NTFS en FAT32 via Diskpart
+## 2. Conversion d'un volume NTFS en FAT32 via Diskpart
 
 ![NTFS FAT32](Images/E06/E06ConvertNTFStoFAT32.jpg)
 
@@ -36,7 +36,7 @@ Diskpart m'affiche un message d'erreur : le volume est trop grand
 
 ![NTFS FAT32](Images/E06/E06ConvertNTFStoFAT32_3.jpg)
 
-3. Utilisation d'une clé USB de 4Go
+## 3. Utilisation d'une clé USB de 4Go
 
 Pour contourner les limations dû aux formats 16 bits, j'utilise une clé USB de 4 Go
 
@@ -61,5 +61,7 @@ Et pour terminer, je créé un volume logique en FAT
 ![Multi parts](Images/E06/E06_Creation_Volume4.jpg) 
 
 ![Multi parts](Images/E06/E06_Formatage_FAT32.jpg) 
+
+Résultat final :
 
 ![Multi parts](Images/E06/E06_resultat_partition.jpg)
