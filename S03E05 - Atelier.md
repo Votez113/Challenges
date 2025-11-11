@@ -129,8 +129,129 @@ Mettez une adresse IP statique sur au moins un PC par sous-réseau pour pouvoir 
 
 ### Réponse :
 
-```bash
+```
 enable
 conf t
 hostname "nom du switch"
 enable secret rockroll
+```
+
+## Étape 4 - Configuration initiale des routeurs
+
+Sur chaque routeur, vous allez devoir :
+
+*   configurer le hostname
+    
+*   ajouter un mot de passe pour protéger le mode privilégié (utilisez le même partout)
+    
+*   configurer une adresse IP sur chaque interface du routeur connectée à un de nos sous-réseaux
+    
+
+Pour la connexion entre Paris et Lille, utilisez les adresses IP :
+
+*   `92.12.34.1/24` pour le routeur de Paris
+    
+*   `92.12.34.2/24` pour le routeur de Lille
+    
+
+Pour la connexion entre Paris et le VPN, utilisez les adresses IP :
+
+*   `92.56.78.1/24` pour le routeur de Paris
+    
+*   `92.56.78.2/24` pour le routeur du VPN
+    
+
+### Réponse :
+
+```
+    enable
+    conf t
+    hostname "nom du routeur"
+    enable secret rockroll
+    
+    Exemple de config IP :
+    ROUT-PARIS-01(config)#interface GigabitEthernet0/1/0
+    ROUT-PARIS-01(config-if)#ip address 10.0.75.254 255.255.255.0
+    ROUT-PARIS-01(config-if)#no shutdown
+```
+
+* * *
+
+## Étape 5 - Routes statiques
+
+Ajoutez des routes statiques et/ou des routes par défaut sur les routeurs de Lille, Paris et du VPN.
+
+L'objectif ? Faire fonctionner le ping entre tous les sous-réseaux !
+
+### Réponse :
+
+```
+    Exemple sur le routeur de Paris :
+    ROUT-PARIS-01(config)#interface GigabitEthernet0/1/0
+    ROUT-PARIS-01(config-if)#ip address 10.0.75.254 255.255.255.0
+    ROUT-PARIS-01(config-if)#ip address 10.0.75.254 255.255.255.0
+```
+
+* * *
+
+## Étape 6 - DHCP
+
+Les salariés sont amenés à se déplacer, pour se faciliter la vie on va donc configurer DHCP sur l'ensemble des réseaux.
+
+Modifiez la configuration des routeurs pour activer DHCP !
+
+Les serveurs et copieurs doivent avoir des adresses IP statiques.
+
+### Réponse :
+
+```
+
+    Exemple DHCP Paris :
+    ip dhcp excluded-address 192.168.75.1 192.168.75.4 (on exclu les adresses des équipements réseaux)
+    ip dhcp pool Paris
+     network 192.168.75.0 255.255.255.0
+     default-router 192.168.75.254
+```
+
+* * *
+
+## Bonus
+
+Déjà fini ? Si vous avez encore du temps et de l'énergie, vous pouvez essayez de remplacer les switchs 2960 utilisés pour le WiFi par des point d'accès WiFi !
+
+Utilisez l'équipement AP-PT (Access Point) dans Packet Tracer, dans la catégorie Network devices > Wireless.
+
+### Réponse :
+
+* * *
+
+## Méga bonus
+
+Envie d'aller plus loin ?
+
+Devoir configuer DHCP sur chaque routeur est un peu galère, ce serait bien qu'on puisse tout configurer sur un serveur central (dans la DMZ, par exemple), avec plusieurs pools pour chaque sous-réseau ! Problème, les trames DHCP sont en broadcast, et ne traversent donc pas les routeurs...
+
+Il faudrait trouver un moyen de relayer les trames DHCP vers notre serveur 🤔
+
+### Réponse :
+
+Activation du DHCP sur un serveur
+
+Suppression du DHCP sur les routeurs et activation du relais DHCP sur les routeurs
+
+```
+    Exemple : 
+    interface GigabitEthernet0/0/0
+      ip helper-address 192.168.75.254
+     no shutdown
+    exit
+
+```
+
+Activation des relais DHCP sur tous les switchs :
+
+```
+    ip dhcp relay information trust-all
+```
+
+Le serveur désigné attribue des IP selon le réseau (routeur) qui émet la demande.
