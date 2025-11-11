@@ -223,6 +223,8 @@ Utilisez l'équipement AP-PT (Access Point) dans Packet Tracer, dans la catégor
 
 ### Réponse :
 
+![schema Wifi](Images/SA03E05/schema_wifi.jpg)
+
 * * *
 
 ## Méga bonus
