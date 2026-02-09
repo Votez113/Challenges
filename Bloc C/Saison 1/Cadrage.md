@@ -38,7 +38,6 @@ L’objectif est de mettre à niveau l’infrastructure pour supporter la charge
 | :--- | :--- | :--- |
 | **Direction du Campus** | Commanditaire / Validation budgétaire | Interne |
 | **Responsable IT** | Chef de projet / Superviseur | Interne |
-| **Alternant IT** | Exécution technique / Configuration | Interne |
 | **Personnel & Formateurs** | Utilisateurs "Métier" (besoins fichiers/accès) | Interne |
 | **Apprenants** | Utilisateurs finaux (Wi-Fi/Services) | Interne |
 | **Fournisseur Hardware** | Livraison des équipements | Externe |
