@@ -41,7 +41,7 @@ graph TD
     style L2 fill:#d1e7ff,stroke:#000
     style L3 fill:#d1e7ff,stroke:#000
     style L4 fill:#d1e7ff,stroke:#000
-
+```
 ---
 
 # Diagramme de Gantt
@@ -56,4 +56,7 @@ gantt
     VLANs           :2026-03-16, 7d
     Wi-Fi           :14d
     section Sécurité
-    Firewall        :2026-03-09, 10d
+    Firewall        :2026-03-09, 10
+
+
+
