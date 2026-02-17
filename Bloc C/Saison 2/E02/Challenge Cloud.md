@@ -60,14 +60,14 @@ Le document contient :
 Pour chaque composant, proposez une cible simple : On‑prem, IaaS, PaaS ou SaaS, avec le provider et la justification.
 
 | Composant | Proposition | Modèle | Provider | Justification courte |
-|---|---|---|---|---|
-| Identités |  |  |  |  |
-| Messagerie + bureautique |  |  |  |  |
-| Fichiers partagés |  |  |  |  |
-| App métier |  |  |  |  |
-| Base de données |  |  |  |  |
-| Sauvegardes |  |  |  |  |
-| Site web |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- |
+| **Identités** | SAAS | O365 | Microsoft | Utilisation d'Entra ID |
+| **Messagerie + bureautique** | SAAS | O365 | Microsoft | Gestion simplifiée et application leader |
+| **Fichiers partagés** | SAAS | O365 | Microsoft | SharePoint, intégré avec les licences O365. |
+| **App métier** | PAAS | Compute | OVH | VM hébergée dans le cloud avec option PCA |
+| **Base de données** | PAAS | Database | OVH | VM hébergée dans le cloud avec option PCA |
+| **Sauvegardes** | On-prem + PCA OVH | | | Utilisation du NAS pour la sauvegarde des fichiers, base SQL et site Web, et souscription de l'offre PCA OVH |
+| **Site web** | PAAS | Compute | OVH | VM hébergée dans le cloud avec option PCA |
 
 Ajoutez un **schéma simple** (même à la main) : utilisateurs → services principaux → données.
 
