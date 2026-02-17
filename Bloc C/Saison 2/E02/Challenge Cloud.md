@@ -75,14 +75,17 @@ Ajoutez un **schéma simple** (même à la main) : utilisateurs → services pri
 
 Comparez **2 ou 3 providers** (Azure, AWS, OVHcloud, etc.).
 
-| Critère | Azure | AWS | OVHcloud |
-|---|---|---|---|
-| Localisation France |  |  |  |
-| Services managés (PaaS) |  |  |  |
-| Coût estimé |  |  |  |
-| Support / simplicité |  |  |  |
+## 2. Choix du provider
 
-Concluez en 4 ou 5 lignes : **le provider retenu et pourquoi**.
+| Critère | Azure | AWS | OVHcloud |
+| :--- | :--- | :--- | :--- |
+| **Localisation France** | Oui (Régions France Central / South) | Oui (Région Paris) | Oui (Plusieurs datacenters en France) |
+| **Services managés (PaaS)** | **Très complet** : Idéal pour Windows, SQL et Web Apps. | **Exhaustif** : Le catalogue le plus large du marché. | **En croissance** : Managed DB et Web PaaS performants. |
+| **Coût estimé** | Moyen (Optimisé via les licences M365 existantes). | Élevé (Tarification complexe à prévoir). | **Très Compétitif** : Environ 40-60% moins cher qu'Azure/AWS. |
+| **Support / Simplicité** | **Élevée** : Interface familière pour les profils Windows. | **Faible** : Demande une expertise technique très pointue. | **Moyenne** : Interface simplifiée et souveraineté européenne. |
+
+### Conclusion et recommandation
+Pour MediCare+, nous préconisons une stratégie **hybride centrée sur Microsoft 365 et OVHcloud**. Ce choix permet de bénéficier du meilleur outil collaboratif du marché (M365) tout en hébergeant les applications critiques chez un acteur européen **souverain et économique**. C'est le compromis idéal pour garantir la conformité RGPD et la maîtrise budgétaire sans surcharger votre administrateur système.
 
 ### 3. Estimation budgétaire (ordre de grandeur)
 
@@ -91,6 +94,12 @@ Donnez une estimation mensuelle **globale** (pas besoin d’être exact) et expl
 ### 4. Points d’attention
 
 Listez 3 à 5 risques majeurs et comment vous les réduisez (ex : migration, sécurité, dépendance fournisseur).
+
+Migration : la migration des données doit être effectuée par lot, et vérifiée à chaque étape. Elle doit être validée après confirmation du transfert total des données, ainsi que l'application correcte des droits.
+
+Sécurité : conserver les comptes administrateur dans un coffre numérique sécurisé, avec un accès restreint.
+
+Dépendance fournisseur : Etablir un PCA qui permet la continuité d'activité (redondance géographique), établie un PRA qui permet la reprise d'activité chez un autre prestataire.
 
 ---
 
