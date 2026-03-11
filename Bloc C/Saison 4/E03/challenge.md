@@ -222,7 +222,6 @@ Ouvrez un terminal et observez sur quel replica atterrissent vos requêtes :
 # Voir les logs de chaque replica en temps réel
 docker service logs -f glpi-swarm_glpi
 ```
-![alt text](Images/2026-03-11_17h22_54.jpg)
 
 Naviguez dans GLPI et rechargez plusieurs fois la page : vous pouvez voir les requêtes distribuées entre les replicas dans les logs.
 
